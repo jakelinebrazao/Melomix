@@ -8,6 +8,8 @@
 <body>
     <header>
         <h1>🎵 MeloMix</h1>
+        <button>🔍</button>
+        <input type="text" placeholder="qual música você quer ouvir?">
         <nav> 
             <a href="#">Início</a>
             <a href="#">Playlists</a>
@@ -16,33 +18,94 @@
         </nav>
     </header>
     <main> <!-- serve para o conteúdo principal do site --> 
-        <section> 
+        <section id="biblioteca" class="secao"> 
             <!-- seção de minhas playlists-->
             <h2>Biblioteca</h2>
+            <button>➕ Criar Playlist</button>
             <ul>
                 <li>Canção para Dormir 💤</li>
                 <li>Brincar & Aprender 🎨</li>
                 <li>Cantigas Clássicas 🎷</li>
             </ul>
         </section>
-        <section>
+        <section id="destaques" class="secao">
             <!-- seção de playlists e músicas em destaque -->
             <h2>Destaques</h2>
-            <article>
+                <div class="grid-playlists">
+            <article class="playlist-card">
+                <div class="playlist-cover">🎉</div>
                 <h3>Hora da diversão</h3>
-                <p>Músicas animadas, para dançar, brincar e cantar.</p>
+                <p>Músicas animadas para dançar e brincar.</p>
+            </article>
+            <article class="playlist-card">
+                <div class="playlist-cover">🎨</div>
+                <h3>Cantigas Clássicas</h3>
+                <p>Músicas infantis mais ouvidas no mundo.</p>
+            </article>
+            <article class="playlist-card">
+                <div class="playlist-cover">💤</div>
+                <h3>Ninar</h3>
+                <p>Músicas calmas para dormir bem.</p>
+            </article>
+            <article class="playlist-card">
+                <div class="playlist-cover">📿</div>
+                <h3>Gospel Kids</h3>
+                <p>Louvores e músicas gospel infantis.</p>
+            </article>
+            <article class="playlist-card">
+                <div class="playlist-cover">😜</div>
+                <h3>Aprender Brincando</h3>
+                <p>Músicas educativas e divertidas.</p>
+            </article>
+            <article class="playlist-card">
+                <div class="playlist-cover">🦓</div>
+                <h3>Animais</h3>
+                <p>Músicas sobre bichinhos e natureza.</p>
+            </article>
+        </div>
+        </section>
+        <section id="artistas" class="secao">
+            <h2>Artistas Infantis</h2>
+            <article>
+                <div class="playlist-cover">👩🏻</div>
+                <h3>Aline Barros</h3>
+                <p>Cantora gospel infantil.</p>
             </article>
             <article>
-                <h3>Cantigas Clássicas</h3>
-                <p>Músicas infantis clássicas mais ouvidas no mundo.</p>
+                <div class="playlist-cover">👱🏻‍♀️</div>
+                <h3>Cristina Mel</h3>
+                <p>Músicas gospel para crianças.</p>
+            </article>
+            <article>
+                <div class="playlist-cover">🐤</div>
+                <h3>Galinha Pintadinha</h3>
+                <p>Sucessos infantis brasileiros.</p>
+            </article>
+            <article>
+                <div class="playlist-cover">👶🏻</div>
+                <h3>Little Angel Portugês</h3>
+                <p>Sucessos infantis do mundo.</p>
             </article>
         </section>
     </main>
-    <footer>
+    
+    <div class="player">
+        <div class="player-info">
+            <h2><strong>Tocando agora:</strong></h2><p> Minha Oração - Aline Barros</p>
+        </div>
+        <div class="player-controls">
+            <button>🔀</button>
+            <button>⏮</button>
+            <button>▶</button>
+            <button>⏭</button>
+            <button>🔁</button>
+        </div>
+    </div>
+<footer>
         <nav>
-        <a herf="">Sobre</a>
-        <a herf="">Contato</a>
-        <a herf="">Termos de uso</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Termos de uso</a>
         </nav>
         <p>© 2024 MeloMix — Projeto para fins educacionais</p>
     </footer>
